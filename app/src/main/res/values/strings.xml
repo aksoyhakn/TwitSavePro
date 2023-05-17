@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Error - Network -->
+    <string name="error_network_title">Herşey Yolunda!</string>
+    <string name="error_network_description">Sadece internet bağlantınızı kontrol edin, biz buradayız.</string>
+    <string name="error_network_buttontext">Tamam</string>
+    <string name="error_network_canceltext">Vazgeç</string>
+    <!-- Error - Network -->
+
+    <string name="title_download">TikTap</string>
+    <string name="title_search">Ara</string>
+
+    <string name="new_version">Yeni sürüm mevcut</string>
+    <string name="new_version_description">Lütfen, uygulamayı yeni sürüme güncelleyin.</string>
+    <string name="new_version_ok">Güncelle</string>
+    <string name="new_version_cancel">Hayır, Teşekkürler</string>
+
+
+    <!-- Dashboard-->
+    <string name="dashboard_description" >Lütfen indirmek istediğiniz TikTok URL aşağıda belirttilen alana giriniz..</string>
+    <string name="dashboard_search_description" >Kopyala, Yapıştır</string>
+
+    <!-- Dashboard-->
+
+
+    <!-- Permission-->
+    <string name="permission" >Lütfen indirmek istediğiniz TikTok URL aşağıda belirttilen alana giriniz..</string>
+    <!-- Permission-->
+
+    <string name="per_new_version">Depolama İzin</string>
+    <string name="per_new_version_description">Lütfen, uygulamaya depolama izni veriniz.</string>
+    <string name="per_new_version_ok">Evet</string>
+    <string name="per_new_version_cancel">Hayır, Teşekkürler</string>
+
+</resources>

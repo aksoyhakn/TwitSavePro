@@ -1,0 +1,43 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/audioplayer_seekbar_thumb.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/bottomnavbar_rounded.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/bottomnavbar_rounded_dark.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/ic_asdasd.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/ic_back.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/ic_back_dark.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/ic_close.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/ic_download.xml" value="0.244" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/menu_analysis.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/progress_bar.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/text_cursor.xml" value="0.2" />
+        <entry key="app/src/main/res/font/dm_sans.xml" value="0.37037037037037035" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/activity_video.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/component_bannerview.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/component_button.xml" value="0.39166666666666666" />
+        <entry key="app/src/main/res/layout/component_search.xml" value="0.39166666666666666" />
+        <entry key="app/src/main/res/layout/dialog_default.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/fragment_download.xml" value="0.39166666666666666" />
+        <entry key="app/src/main/res/layout/fragment_expert.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/fragment_indicator.xml" value="0.20364583333333333" />
+        <entry key="app/src/main/res/layout/fragment_premium.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/fragment_showtiktok.xml" value="0.40677083333333336" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_expert.xml" value="0.20364583333333333" />
+        <entry key="app/src/main/res/layout/item_premium.xml" value="0.3880208333333333" />
+        <entry key="app/src/main/res/layout/view_search.xml" value="0.39166666666666666" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu_1.xml" value="0.3890625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

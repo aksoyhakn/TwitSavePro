@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="errorModel"
+            type="com.dursun.tiktap.data.service.util.ErrorModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.tistory.zladnrms.roundablelayout.RoundableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundColor="@color/white"
+            app:cornerLeftSide="20dp"
+            app:cornerRightSide="20dp"
+            bind:ignore="MissingClass">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_close" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="35dp"
+                android:visibility="gone"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_close"
+                app:srcCompat="@drawable/ic_logo_antrasit" />
+
+            <TextView
+                android:id="@+id/tv_titlee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@{errorModel.title}"
+                android:textColor="@color/antrasit"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/iv_icon"
+                app:layout_constraintStart_toStartOf="@+id/iv_icon"
+                app:layout_constraintTop_toBottomOf="@+id/iv_icon" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/BodyPrimaryCenter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:layout_marginTop="12dp"
+                android:lineHeight="24dp"
+                android:text="@{errorModel.desription}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_titlee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description">
+
+                <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                    android:id="@+id/rl_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    app:cornerLeftSide="8dp"
+                    app:cornerRightSide="8dp"
+                    app:strokeLineColor="@color/antrasit"
+                    app:strokeLineWidth="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:letterSpacing="0.02"
+                        android:lineSpacingExtra="10sp"
+                        android:text="@string/error_network_canceltext"
+                        android:textColor="#242836"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+                <com.dursun.tiktap.ui.common.component.button.IyiyasaButton
+                    android:id="@+id/btn_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    bind:setButtonIsActive="@{true}"
+                    bind:setButtonText="@{errorModel.buttonName}" />
+
+            </LinearLayout>
+
+
+        </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="buttonName"
+            type="String" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.tistory.zladnrms.roundablelayout.RoundableLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="1dp"
+            app:backgroundColor="@color/backgroundPurpColor"
+            app:cornerAll="30dp"/>
+
+        <com.tistory.zladnrms.roundablelayout.RoundableLayout
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="1dp"
+            app:backgroundColor="@color/backgroundColor"
+            app:cornerAll="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

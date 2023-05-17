@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "292317956703",
+    "project_id": "ticktapapp",
+    "storage_bucket": "ticktapapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292317956703:android:b3e1a9d14db31e4ac269ea",
+        "android_client_info": {
+          "package_name": "com.dursun.tiktap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292317956703-pu1tpnd4juchv8tbi9neshpdap0ltfhu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dursun.tiktap",
+            "certificate_hash": "29d00c32aee5dfb17cc9d5c502a2c20e93ad6a90"
+          }
+        },
+        {
+          "client_id": "292317956703-hv1pu1uefpr38v85ahg338bkllktjf9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY2cmRcTHD_gOUP5IL3r1PJ699l2UrZPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292317956703-hv1pu1uefpr38v85ahg338bkllktjf9v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "292317956703-beqh18ok0hju16ftpmgne31p15ms353p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.DursunDogan.TikTapDownloader"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

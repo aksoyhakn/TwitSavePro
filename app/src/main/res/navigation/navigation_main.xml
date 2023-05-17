@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_dashboard"
+    app:startDestination="@+id/navigation_expert">
+
+    <fragment
+        android:id="@+id/navigation_expert"
+        android:name="com.dursun.tiktap.ui.main.downloaad.DownloadFragment"
+        android:label="A"
+        tools:layout="@layout/fragment_download">
+        <action
+            android:id="@+id/action_navigation_download_to_premium"
+            app:destination="@+id/premium"
+            app:enterAnim="@anim/enter_from_down"
+            app:exitAnim="@anim/exit_from_up"
+            app:popEnterAnim="@anim/enter_from_up"
+            app:popExitAnim="@anim/exit_from_down" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/premium"
+        android:name="com.dursun.tiktap.ui.main.premium.PremiumFragment"
+        tools:layout="@layout/fragment_premium" />
+
+</navigation>

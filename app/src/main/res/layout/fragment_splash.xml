@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundPurpColor"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/clRoot"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundPurpColor"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.tistory.zladnrms.roundablelayout.RoundableLayout
+                android:id="@+id/ivSplash"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="75dp"
+                android:layout_marginEnd="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="10dp"
+                app:backgroundColor="@color/white"
+                app:cornerAll="20dp">
+
+            </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="30dp"
+                app:layout_constraintTop_toTopOf="@+id/ivSplash"
+                app:layout_constraintBottom_toBottomOf="@+id/ivSplash"
+                android:background="@drawable/deneme" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>

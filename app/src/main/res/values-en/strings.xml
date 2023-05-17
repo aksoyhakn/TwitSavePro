@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Error - Network -->
+    <string name="error_network_title">Everything is OK!</string>
+    <string name="error_network_description">Just check your internet connection, we are here.</string>
+    <string name="error_network_buttontext">OK</string>
+    <string name="error_network_canceltext">Cancel</string>
+    <!-- Error - Network -->
+
+    <string name="title_download">TikTap</string>
+    <string name="title_search">Search</string>
+
+    <string name="new_version">New version available</string>
+    <string name="new_version_description">Please update the app to the new version.</string>
+    <string name="new_version_ok">Update</string>
+    <string name="new_version_cancel">No, Thanks</string>
+
+
+    <!-- Dashboard-->
+    <string name="dashboard_description">Please enter the TikTok URL you want to download in the field indicated below.</string>
+    <string name="dashboard_search_description">Copy, Paste</string>
+    <!-- Dashboard-->
+
+    <!-- Permission-->
+    <string name="permission" >Lütfen indirmek istediğiniz TikTok URL aşağıda belirttilen alana giriniz..</string>
+    <!-- Permission-->
+
+    <string name="per_new_version">Storage Permission</string>
+    <string name="per_new_version_description">Please give storage permission to the app.</string>
+    <string name="per_new_version_ok">Yes</string>
+    <string name="per_new_version_cancel">No, Thanks</string>
+
+</resources>

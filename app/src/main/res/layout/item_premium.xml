@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.dursun.tiktap.ui.main.premium.model.Premium" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clLayout"
+        android:layout_margin="4dp"
+        android:background="@android:color/transparent">
+
+        <com.tistory.zladnrms.roundablelayout.RoundableLayout
+            android:id="@+id/rlExpertDetail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:backgroundColor="@color/orange"
+            app:cornerAll="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeLineColor="@color/solitude"
+            app:strokeLineWidth="1dp">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/StyleBoldText20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:singleLine="true"
+                android:text="@{item.title}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Aylık Üyelik" />
+
+            <TextView
+                android:id="@+id/tvTitleAssetName"
+                style="@style/StyleMediumText14_Antrasit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@{item.amount}"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                tools:text="9.99 TL" />
+
+
+        </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
