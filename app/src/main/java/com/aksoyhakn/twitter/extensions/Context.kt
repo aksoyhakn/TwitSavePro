@@ -21,7 +21,6 @@ import com.aksoyhakn.twitter.BuildConfig
 import com.aksoyhakn.twitter.R
 import com.aksoyhakn.twitter.data.service.util.ErrorModel
 import com.aksoyhakn.twitter.data.service.util.ExceptionHandle
-import com.aksoyhakn.twitter.databinding.DialogDefaultBinding
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
@@ -174,7 +173,7 @@ fun Context.errorString(error: ExceptionHandle.Companion.ERROR?): ErrorModel {
     return when (error) {
         ExceptionHandle.Companion.ERROR.SOCKET_TIMEOUT -> {
             ErrorModel(
-                resDrawable(R.drawable.ic_logo, null),
+                resDrawable(R.mipmap.ic_launcher, null),
                 resString(R.string.error_network_title),
                 resString(R.string.error_network_description),
                 resString(R.string.error_network_buttontext)
@@ -183,7 +182,7 @@ fun Context.errorString(error: ExceptionHandle.Companion.ERROR?): ErrorModel {
 
         ExceptionHandle.Companion.ERROR.CONNECT_ERROR -> {
             ErrorModel(
-                resDrawable(R.drawable.ic_logo, null),
+                resDrawable(R.mipmap.ic_launcher, null),
                 resString(R.string.error_network_title),
                 resString(R.string.error_network_description),
                 resString(R.string.error_network_buttontext)
@@ -191,7 +190,7 @@ fun Context.errorString(error: ExceptionHandle.Companion.ERROR?): ErrorModel {
         }
         else ->
             ErrorModel(
-                resDrawable(R.drawable.ic_logo, null),
+                resDrawable(R.mipmap.ic_launcher, null),
                 resString(R.string.error_network_title),
                 resString(R.string.error_network_description),
                 resString(R.string.error_network_buttontext)

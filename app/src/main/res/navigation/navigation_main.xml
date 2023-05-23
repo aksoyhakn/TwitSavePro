@@ -9,19 +9,6 @@
         android:id="@+id/navigation_expert"
         android:name="com.aksoyhakn.twitter.ui.main.downloaad.DownloadFragment"
         android:label="A"
-        tools:layout="@layout/fragment_download">
-        <action
-            android:id="@+id/action_navigation_download_to_premium"
-            app:destination="@+id/premium"
-            app:enterAnim="@anim/enter_from_down"
-            app:exitAnim="@anim/exit_from_up"
-            app:popEnterAnim="@anim/enter_from_up"
-            app:popExitAnim="@anim/exit_from_down" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/premium"
-        android:name="com.aksoyhakn.twitter.ui.main.premium.PremiumFragment"
-        tools:layout="@layout/fragment_premium" />
+        tools:layout="@layout/fragment_download"/>
 
 </navigation>

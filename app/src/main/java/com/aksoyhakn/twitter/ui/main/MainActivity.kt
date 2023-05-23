@@ -24,32 +24,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
-        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_TIME);
         MobileAds.initialize(this)
         initStatusBar()
         navController = findNavController(R.id.nav_host_fragment)
     }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            android.R.id.home -> {
-                navController.navigateUp()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
-
-    fun httpHeadRequestCoroutine() {
-        val httpClient: OkHttpClient = OkHttpClient.Builder()
-            .build()
-
-        val requestHead = Request.Builder().head().url("https://vm.tiktok.com/ZMYnCykoQ/").head().build()
-        var response = httpClient.newCall(requestHead).execute()
-        Log.d("Hakan",response.toString())
-
-    }
-
 
     companion object {
         var remoteCounter = 10

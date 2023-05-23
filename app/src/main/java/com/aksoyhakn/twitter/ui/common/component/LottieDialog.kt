@@ -1,4 +1,4 @@
-package com.aksoyhakn.twitter.ui.common
+package com.aksoyhakn.twitter.ui.common.component
 
 import android.app.Dialog
 import android.content.Context
@@ -12,7 +12,7 @@ import com.aksoyhakn.twitter.R
  */
 
 
-class LottieProgressDialog(context: Context) :
+class LottieDialog(context: Context) :
     Dialog(context, R.style.LottieProgressDialog) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

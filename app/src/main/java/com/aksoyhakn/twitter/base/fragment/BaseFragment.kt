@@ -10,9 +10,8 @@ import androidx.fragment.app.Fragment
 import com.aksoyhakn.twitter.base.viewmodel.BaseViewModel
 import com.aksoyhakn.twitter.data.preference.PreferenceHelperImp
 import com.aksoyhakn.twitter.extensions.*
-import com.aksoyhakn.twitter.ui.common.LottieProgressDialog
+import com.aksoyhakn.twitter.ui.common.component.LottieDialog
 import com.aksoyhakn.twitter.utils.AutoClearedFragmentValue
-import com.aksoyhakn.twitter.utils.analytics.FirebaseAnalyticsHelper
 import hideKeyboard
 import javax.inject.Inject
 
@@ -25,10 +24,8 @@ abstract class BaseFragment<T : ViewDataBinding>(var layoutId: Int) : Fragment()
 
     protected var dataBinding: T by AutoClearedFragmentValue()
 
-    private var progress: LottieProgressDialog? = null
+    private var progress: LottieDialog? = null
 
-    @Inject
-    lateinit var firebaseAnalyticsHelper: FirebaseAnalyticsHelper
 
     @Inject
     lateinit var preferenceHelper: PreferenceHelperImp
@@ -91,7 +88,7 @@ abstract class BaseFragment<T : ViewDataBinding>(var layoutId: Int) : Fragment()
         hideLoading()
         this.context.notNull { context ->
             progress.isNull {
-                progress = LottieProgressDialog(context)
+                progress = LottieDialog(context)
             }
             progress?.show()
         }

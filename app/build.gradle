@@ -28,7 +28,7 @@ android {
     buildToolsVersion project.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.dursun.tiktap"
+        applicationId "com.aksoyhakn.twitter"
         minSdkVersion project.minSdkVersion
         targetSdkVersion project.targetSdkVersion
         versionCode 4
@@ -60,16 +60,15 @@ android {
 
     productFlavors {
         storeFlavor {
-            resValue "string", "app_name", "TikTap"
+            resValue "string", "app_name", "TwiSavePro+"
             buildConfigField("String", "BASE_URL", "\"https://taptik.net/\"")
             buildConfigField 'Boolean', 'GADGET_ENABLED', 'false'
             signingConfig signingConfigs.release
 
         }
         devFlavor {
-            resValue "string", "app_name", "TikTap - Dev"
+            resValue "string", "app_name", "TwiSavePro+"
             buildConfigField("String", "BASE_URL", "\"https://taptik.net/\"")
-            buildConfigField("String", "BASE_URLLL", "\"https://m.tiktok.com/api/item/\"")
             buildConfigField 'Boolean', 'GADGET_ENABLED', 'true'
         }
     }

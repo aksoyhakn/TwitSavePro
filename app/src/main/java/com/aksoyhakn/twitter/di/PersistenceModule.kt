@@ -6,13 +6,10 @@ import androidx.room.Room
 import com.aksoyhakn.twitter.data.persistence.AppDatabase
 import com.aksoyhakn.twitter.data.persistence.BaseDao
 import com.aksoyhakn.twitter.utils.Constants
-import com.aksoyhakn.twitter.utils.analytics.AnalyticsHelper
-import com.aksoyhakn.twitter.utils.analytics.FirebaseAnalyticsHelper
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
 
 /**
  * Created by hakanaksoy on 17.12.22.
@@ -23,10 +20,6 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object PersistenceModule {
 
-    @Provides
-    @Singleton
-    fun providesFirebaseAnalyticsHelper(context: Context): AnalyticsHelper =
-        FirebaseAnalyticsHelper(context)
 
     @Provides
     fun provideAppDatabase(

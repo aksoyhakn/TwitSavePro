@@ -82,7 +82,7 @@ object NetworkModule {
     private fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
-            .baseUrl(BuildConfig.BASE_URLLL)
+            .baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(provideGsonBuilder()))
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .build()

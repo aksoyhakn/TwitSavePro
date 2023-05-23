@@ -9,7 +9,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.FragmentManager
 import com.aksoyhakn.twitter.R
 import com.aksoyhakn.twitter.base.viewmodel.BaseViewModel
-import com.aksoyhakn.twitter.ui.common.LottieProgressDialog
+import com.aksoyhakn.twitter.ui.common.component.LottieDialog
 import com.aksoyhakn.twitter.utils.AutoClearedFragmentValue
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -24,7 +24,7 @@ abstract class BaseBottomSheetDialog<T : ViewDataBinding>(var layoutId: Int) :
 
     protected var dataBinding: T by AutoClearedFragmentValue()
 
-    private var progress: LottieProgressDialog? = null
+    private var progress: LottieDialog? = null
 
     abstract fun getBaseViewModel(): BaseViewModel
 
