@@ -6,11 +6,11 @@
 
         <variable
             name="viewModel"
-            type="com.dursun.tiktap.ui.main.downloaad.DownloadViewModel" />
+            type="com.aksoyhakn.twitter.ui.main.downloaad.DownloadViewModel" />
 
         <variable
             name="fragment"
-            type="com.dursun.tiktap.ui.main.downloaad.DownloadFragment" />
+            type="com.aksoyhakn.twitter.ui.main.downloaad.DownloadFragment" />
 
     </data>
 

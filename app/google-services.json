@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "167885909332",
+    "project_id": "tiktap-adfc6",
+    "storage_bucket": "tiktap-adfc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167885909332:android:bab50c893fe92c71746cc1",
+        "android_client_info": {
+          "package_name": "com.aksoyhakn.twitter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167885909332-45vorkqtq217isi13v0vhdugd7enmmsn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aksoyhakn.twitter",
+            "certificate_hash": "ce08f5c5c89e9b17340223c64b7a8b5ac1c4f3bf"
+          }
+        },
+        {
+          "client_id": "167885909332-8j9nik6akojoa0v7qraidc4ddlaou13t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHqnHqG0CZR_GKr5uNo4-39ywWMk1gFQI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167885909332-8j9nik6akojoa0v7qraidc4ddlaou13t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

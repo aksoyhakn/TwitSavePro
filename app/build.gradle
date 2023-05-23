@@ -11,11 +11,17 @@ plugins {
 
 android {
     signingConfigs {
+        debug {
+            storeFile file('/Users/vb36347/Desktop/keyStore/key')
+            storePassword 'aksoyhakn'
+            keyAlias 'aksoyhakn'
+            keyPassword 'aksoyhakn'
+        }
         release {
-        storeFile file('/Users/vb36347/Desktop/dursunDogan/dursun')
-            storePassword 'Sarp8963'
-            keyAlias 'dursunDogan'
-            keyPassword 'Sarp8963'
+            storeFile file('/Users/vb36347/Desktop/keyStore/key')
+            storePassword 'aksoyhakn'
+            keyAlias 'aksoyhakn'
+            keyPassword 'aksoyhakn'
         }
     }
     compileSdkVersion project.compileSdkVersion

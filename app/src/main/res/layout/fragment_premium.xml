@@ -7,15 +7,15 @@
 
         <variable
             name="viewModel"
-            type="com.dursun.tiktap.ui.main.premium.PremiumViewModel" />
+            type="com.aksoyhakn.twitter.ui.main.premium.PremiumViewModel" />
 
         <variable
             name="fragment"
-            type="com.dursun.tiktap.ui.main.premium.PremiumFragment" />
+            type="com.aksoyhakn.twitter.ui.main.premium.PremiumFragment" />
 
         <variable
             name="listener"
-            type="com.dursun.tiktap.ui.main.premium.adapter.PremiumAdapter.ListenerPremium" />
+            type="com.aksoyhakn.twitter.ui.main.premium.adapter.PremiumAdapter.ListenerPremium" />
 
 
     </data>

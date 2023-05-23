@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.dursun.tiktap">
+    package="com.aksoyhakn.twitter">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
-        android:name=".app.TikTakApp"
+        android:name="com.aksoyhakn.twitter.app.TikTakApp"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:exported="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
 
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="com.aksoyhakn.twitter.ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +30,7 @@
         </activity>
 
         <service
-            android:name=".utils.notification.AppFirebaseMessagingService"
+            android:name="com.aksoyhakn.twitter.utils.notification.AppFirebaseMessagingService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

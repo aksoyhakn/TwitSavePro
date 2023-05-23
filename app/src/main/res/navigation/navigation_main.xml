@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_expert"
-        android:name="com.dursun.tiktap.ui.main.downloaad.DownloadFragment"
+        android:name="com.aksoyhakn.twitter.ui.main.downloaad.DownloadFragment"
         android:label="A"
         tools:layout="@layout/fragment_download">
         <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/premium"
-        android:name="com.dursun.tiktap.ui.main.premium.PremiumFragment"
+        android:name="com.aksoyhakn.twitter.ui.main.premium.PremiumFragment"
         tools:layout="@layout/fragment_premium" />
 
 </navigation>

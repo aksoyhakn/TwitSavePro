@@ -6,8 +6,8 @@ initial_folder = os.path.abspath(".")
 package_separator = "."
 
 #arguments
-old_package = "com.dursun.tiktak"
-new_package = "com.dursun.tiktap"
+old_package = "com.hakan.tiktap"
+new_package = "com.aksoyhakn.twitter"
 proguard = None
 
 def charge_proguard():

@@ -6,7 +6,7 @@
 
         <variable
             name="item"
-            type="com.dursun.tiktap.ui.main.premium.model.Premium" />
+            type="com.aksoyhakn.twitter.ui.main.premium.model.Premium" />
 
     </data>
 

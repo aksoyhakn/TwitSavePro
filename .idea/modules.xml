@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TikTap.iml" filepath="$PROJECT_DIR$/.idea/modules/TikTap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TikTap.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TikTap.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TikTap.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TikTap.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TikTap.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TikTap.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TikTap.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TikTap.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TwitSavePro.iml" filepath="$PROJECT_DIR$/.idea/modules/TwitSavePro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TwitSavePro.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TwitSavePro.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TwitSavePro.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TwitSavePro.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TwitSavePro.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TwitSavePro.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TwitSavePro.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TwitSavePro.app.unitTest.iml" />
     </modules>
   </component>
 </project>

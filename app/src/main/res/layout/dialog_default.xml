@@ -7,7 +7,7 @@
 
         <variable
             name="errorModel"
-            type="com.dursun.tiktap.data.service.util.ErrorModel" />
+            type="com.aksoyhakn.twitter.data.service.util.ErrorModel" />
 
     </data>
 
@@ -113,7 +113,7 @@
 
                 </com.tistory.zladnrms.roundablelayout.RoundableLayout>
 
-                <com.dursun.tiktap.ui.common.component.button.IyiyasaButton
+                <com.aksoyhakn.twitter.ui.common.component.button.IyiyasaButton
                     android:id="@+id/btn_click"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"

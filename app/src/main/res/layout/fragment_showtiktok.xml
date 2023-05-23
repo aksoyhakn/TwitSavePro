@@ -7,11 +7,11 @@
 
         <variable
             name="data"
-            type="com.dursun.tiktap.ui.main.downloaad.tiktokModel.TikTokResponse" />
+            type="com.aksoyhakn.twitter.ui.main.downloaad.tiktokModel.TikTokResponse" />
 
         <variable
             name="fragment"
-            type="com.dursun.tiktap.ui.main.downloaad.showTikTok.ShowtikTokBottomSheet" />
+            type="com.aksoyhakn.twitter.ui.main.downloaad.showTikTok.ShowtikTokBottomSheet" />
 
     </data>
 
