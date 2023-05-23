@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.adaptyteam:AdaptySDK-Android:2.4.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7f756425ba774e26bb3f5fe93346dac9/transformed/AdaptySDK-Android-2.4.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7f756425ba774e26bb3f5fe93346dac9/transformed/AdaptySDK-Android-2.4.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7f756425ba774e26bb3f5fe93346dac9/transformed/AdaptySDK-Android-2.4.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.adaptyteam/AdaptySDK-Android/2.4.1/cd824f275f747a98bb9d2810ba115c015dee6b4d/AdaptySDK-Android-2.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

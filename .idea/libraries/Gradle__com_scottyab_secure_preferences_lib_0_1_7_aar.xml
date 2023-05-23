@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.scottyab:secure-preferences-lib:0.1.7@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/52fd3a439a82cfd7d3dfbedcc8082fcd/transformed/secure-preferences-lib-0.1.7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/52fd3a439a82cfd7d3dfbedcc8082fcd/transformed/secure-preferences-lib-0.1.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/de65a09d4674d16732a28adc3974c556/transformed/secure-preferences-lib-0.1.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/de65a09d4674d16732a28adc3974c556/transformed/secure-preferences-lib-0.1.7/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scottyab/secure-preferences-lib/0.1.7/b055b3276b9213650b7ae2260db08e92cf0d5b83/secure-preferences-lib-0.1.7-javadoc.jar!/" />

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.pierfrancescosoffritti.androidyoutubeplayer:core:11.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bbf9300c378f2fe9d3d5847f9a368222/transformed/core-11.1.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bbf9300c378f2fe9d3d5847f9a368222/transformed/core-11.1.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bbf9300c378f2fe9d3d5847f9a368222/transformed/core-11.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cb2ad35a626469d8bd999f0ba709516a/transformed/core-11.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb2ad35a626469d8bd999f0ba709516a/transformed/core-11.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb2ad35a626469d8bd999f0ba709516a/transformed/core-11.1.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pierfrancescosoffritti.androidyoutubeplayer/core/11.1.0/b96f4762fbc26398ef7846452bb54d238d431cdc/core-11.1.0-javadoc.jar!/" />
