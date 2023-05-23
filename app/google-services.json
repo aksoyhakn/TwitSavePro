@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "167885909332",
-    "project_id": "tiktap-adfc6",
-    "storage_bucket": "tiktap-adfc6.appspot.com"
+    "project_number": "583589442004",
+    "project_id": "twisavepro",
+    "storage_bucket": "twisavepro.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:167885909332:android:bab50c893fe92c71746cc1",
+        "mobilesdk_app_id": "1:583589442004:android:6c99da1696baca8f25e641",
         "android_client_info": {
           "package_name": "com.aksoyhakn.twitter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "167885909332-45vorkqtq217isi13v0vhdugd7enmmsn.apps.googleusercontent.com",
+          "client_id": "583589442004-855tegdbsst7sps79oq5pvd1mqj21hlh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.aksoyhakn.twitter",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "167885909332-8j9nik6akojoa0v7qraidc4ddlaou13t.apps.googleusercontent.com",
+          "client_id": "583589442004-rn2s87vhi111j9mpo8edn5cinv99cu4u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDHqnHqG0CZR_GKr5uNo4-39ywWMk1gFQI"
+          "current_key": "AIzaSyAEknFxZMYj8ydxWxJEjK7Z7PFKsbOCL64"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "167885909332-8j9nik6akojoa0v7qraidc4ddlaou13t.apps.googleusercontent.com",
+              "client_id": "583589442004-rn2s87vhi111j9mpo8edn5cinv99cu4u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
