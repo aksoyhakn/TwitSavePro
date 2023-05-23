@@ -4,12 +4,12 @@ import android.app.Application
 import android.content.Context
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.aksoyhakn.twitter.BuildConfig
-import com.aksoyhakn.twitter.app.TikTakApp
+import com.aksoyhakn.twitter.app.AppBase
 import com.aksoyhakn.twitter.data.preference.PreferenceHelper
 import com.aksoyhakn.twitter.data.preference.PreferenceHelperImp
 import com.aksoyhakn.twitter.data.service.LoggingInterceptor
-import com.aksoyhakn.twitter.data.service.TikTakDataSource
-import com.aksoyhakn.twitter.data.service.TikTakService
+import com.aksoyhakn.twitter.data.service.AppDataSource
+import com.aksoyhakn.twitter.data.service.AppService
 import com.aksoyhakn.twitter.utils.Constants
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -45,7 +45,7 @@ object NetworkModule {
 
     @Provides
     fun provideContext(application: Application): Context =
-        TikTakApp.instance.applicationContext
+        AppBase.instance.applicationContext
 
     @Provides
     fun provideChuckInterceptor(application: Application) = ChuckerInterceptor(application)
@@ -88,18 +88,17 @@ object NetworkModule {
             .build()
     }
 
-
     @Provides
     @Singleton
-    fun provideTikTakService(okHttpClient: OkHttpClient): TikTakService {
-        return provideRetrofit(okHttpClient).create(TikTakService::class.java)
+    fun provideAppService(okHttpClient: OkHttpClient): AppService {
+        return provideRetrofit(okHttpClient).create(AppService::class.java)
     }
 
     @Provides
     @Singleton
-    fun provideTikTakClient(
-        tikTakService: TikTakService
-    ): TikTakDataSource {
-        return TikTakDataSource(tikTakService)
+    fun provideAppClient(
+        appService: AppService
+    ): AppDataSource {
+        return AppDataSource(appService)
     }
 }

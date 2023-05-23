@@ -84,11 +84,6 @@ abstract class BaseFragment<T : ViewDataBinding>(var layoutId: Int) : Fragment()
     private fun toogleErrorOrFail() {
         getBaseViewModel().fragmentErrorOrFail.observe(viewLifecycleOwner) {
             hideLoading()
-            requireContext().showDialog(it, {
-                activity?.onBackPressed()
-            }, {
-                activity?.onBackPressed()
-            })
         }
     }
 

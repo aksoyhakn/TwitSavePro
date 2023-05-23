@@ -9,7 +9,7 @@ import com.aksoyhakn.twitter.data.persistence.entity.Data
  */
 
 @Dao
-interface TikTakDao {
+interface BaseDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertUser(user: Data)
 

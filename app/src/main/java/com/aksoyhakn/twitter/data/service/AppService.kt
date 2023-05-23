@@ -10,8 +10,7 @@ import retrofit2.http.*
  * NargileyeFısıldayanAdam
  */
 
-interface TikTakService {
-
+interface AppService {
     @Headers(
         "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36"
     )

@@ -1,7 +1,6 @@
 package com.aksoyhakn.twitter.data.service.util
 
 import androidx.annotation.MainThread
-import com.aksoyhakn.twitter.data.service.model.BaseResponse
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
 import retrofit2.Response
@@ -22,8 +21,6 @@ abstract class NetworkBoundRepository<RESULT, REQUEST> {
 
         if (apiResponse.isSuccessful && remotePosts != null) {
             emit(State.success(apiResponse))
-        } else {
-            emit(State.apiFail(BaseResponse(apiResponse.message())))
         }
     }.catch { e ->
         emit(State.error(e))

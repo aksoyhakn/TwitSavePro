@@ -10,14 +10,14 @@ import javax.inject.Inject
  * NargileyeFısıldayanAdam
  */
 
-class TikTakDataSource @Inject constructor(
-    private val tikTakService: TikTakService
+class AppDataSource @Inject constructor(
+    private val appService: AppService
 ) {
 
     suspend fun downloadTikTok(itemId: String): Response<TikTokResponse> =
-        tikTakService.downloadTikTok(itemId)
+        appService.downloadTikTok(itemId)
 
     suspend fun getTikTokURL(url: String): Response<TikTokURL> =
-        tikTakService.getTikTokURL(url)
+        appService.getTikTokURL(url)
 
 }

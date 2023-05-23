@@ -26,7 +26,6 @@ class LoggingInterceptor @Inject constructor(var preferenceHelperImp: Preference
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
 
-
         val requestBuilder = request.newBuilder().method(request.method, request.body)
         val newRequest = requestBuilder.build()
 
@@ -44,20 +43,6 @@ class LoggingInterceptor @Inject constructor(var preferenceHelperImp: Preference
 
         try {
             rawJson = response.body?.string()
-
-            request.url.toString().takeIf { it.contains("v16-webapp") }?.apply {
-                val decoder: Base64.Decoder = Base64.getDecoder()
-                var encode = Base64.getEncoder().encodeToString(rawJson?.toByteArray())
-                val decoded = "{data:video/mp4;base64,${encode}}"
-
-                val jsonString = "{\"url\":\"data:video/mp4;base64,${encode}\"}"
-
-                return response.newBuilder()
-                    .body(jsonString.toResponseBody(request.body?.contentType())).build()
-
-            }
-
-
             Logger.json(rawJson)
 
         } catch (e: Exception) {

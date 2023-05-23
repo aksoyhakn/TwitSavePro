@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.Context
 import androidx.room.Room
 import com.aksoyhakn.twitter.data.persistence.AppDatabase
-import com.aksoyhakn.twitter.data.persistence.TikTakDao
+import com.aksoyhakn.twitter.data.persistence.BaseDao
 import com.aksoyhakn.twitter.utils.Constants
 import com.aksoyhakn.twitter.utils.analytics.AnalyticsHelper
 import com.aksoyhakn.twitter.utils.analytics.FirebaseAnalyticsHelper
@@ -23,12 +23,10 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object PersistenceModule {
 
-
     @Provides
     @Singleton
     fun providesFirebaseAnalyticsHelper(context: Context): AnalyticsHelper =
         FirebaseAnalyticsHelper(context)
-
 
     @Provides
     fun provideAppDatabase(
@@ -41,8 +39,8 @@ object PersistenceModule {
     }
 
     @Provides
-    fun provideTrendLineDao(appDatabase: AppDatabase): TikTakDao {
-        return appDatabase.tikTakDao()
+    fun provideBaseDao(appDatabase: AppDatabase): BaseDao {
+        return appDatabase.baseDao()
     }
 
 }

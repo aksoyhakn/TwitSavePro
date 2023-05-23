@@ -9,7 +9,6 @@ import androidx.navigation.Navigation
 import com.aksoyhakn.twitter.R
 import com.aksoyhakn.twitter.base.fragment.BaseFragment
 import com.aksoyhakn.twitter.base.viewmodel.BaseViewModel
-import com.aksoyhakn.twitter.data.service.model.FriendlyMessage
 import com.aksoyhakn.twitter.databinding.FragmentSplashBinding
 import com.aksoyhakn.twitter.extensions.*
 import com.aksoyhakn.twitter.ui.main.MainActivity.Companion.remoteCounter
@@ -47,7 +46,7 @@ class SplashFragment :
                     if (it) {
                         initRemoteConfig()
                     } else {
-                        requireContext().showDialog(UnknownHostException(), {}, {})
+                       // requireContext().showDialog(UnknownHostException(), {}, {})
                     }
                 }
             }
@@ -94,35 +93,16 @@ class SplashFragment :
                             },
                             onPermissionsNotGranted = {
                                 preferenceHelper.setIsFirstApp(false)
-                                requireContext().showDialog(
-                                    FriendlyMessage(
-                                        resString(R.string.per_new_version),
-                                        resString(R.string.per_new_version_description),
-                                        false,
-                                        resString(R.string.per_new_version_cancel),
-                                        resString(R.string.per_new_version_ok),
-                                        ""
-                                    ),
-                                    {
-                                        requireActivity().navigateToSettings()
-                                    },
-                                    {
-                                        requireActivity().finish()
-                                    }
-                                )
                             })
 
 
                     }
                 } else {
-                    requireContext().showDialog(UnknownHostException(), {}, {})
                 }
             }
             .addOnFailureListener { exception ->
-                requireContext().showDialog(UnknownHostException(), {}, {})
             }
             .addOnCanceledListener {
-                requireContext().showDialog(UnknownHostException(), {}, {})
             }
     }
 
@@ -136,25 +116,6 @@ class SplashFragment :
             }
 
         } else {
-
-            context?.handler(500) {
-                requireContext().showDialog(
-                    FriendlyMessage(
-                        resString(R.string.new_version),
-                        resString(R.string.new_version_description),
-                        false,
-                        resString(R.string.new_version_cancel),
-                        resString(R.string.new_version_ok),
-                        ""
-                    ),
-                    {
-                        requireContext().openMarket()
-                    },
-                    {
-                        requireActivity().finish()
-                    }
-                )
-            }
 
         }
     }

@@ -1,6 +1,5 @@
 package com.aksoyhakn.twitter.data.service.util
 
-import com.aksoyhakn.twitter.data.service.model.BaseResponse
 import retrofit2.Response
 
 /**
@@ -15,8 +14,6 @@ sealed class State<T> {
 
     data class Error<T>(val throwable: Throwable) : State<T>()
 
-    data class Fail<T>(val baseResponse: BaseResponse) : State<T>()
-
     data class IdentityError<T>(val baseResponse: String) : State<T>()
 
     companion object {
@@ -29,10 +26,5 @@ sealed class State<T> {
         fun <T> error(throwable: Throwable) =
             Error<T>(throwable)
 
-        fun <T> apiFail(baseResponse: BaseResponse) =
-            Fail<T>(baseResponse)
-
-        fun <T> apiIdentity(baseResponse: String) =
-            IdentityError<T>(baseResponse)
     }
 }

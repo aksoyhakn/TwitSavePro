@@ -19,8 +19,6 @@ import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.aksoyhakn.twitter.BuildConfig
 import com.aksoyhakn.twitter.R
-import com.aksoyhakn.twitter.data.service.model.ErrorMessage
-import com.aksoyhakn.twitter.data.service.model.FriendlyMessage
 import com.aksoyhakn.twitter.data.service.util.ErrorModel
 import com.aksoyhakn.twitter.data.service.util.ExceptionHandle
 import com.aksoyhakn.twitter.databinding.DialogDefaultBinding
@@ -170,58 +168,6 @@ fun Context.castVerificationCode(message: String): String {
 }
 
 
-fun Context.showDialog(
-    item: Any?,
-    listenerOkey: () -> Unit,
-    listenerCancel: () -> Unit
-) {
-    this.notNull {
-        val dialog = Dialog(it)
-        val binding: DialogDefaultBinding =
-            DataBindingUtil.inflate(dialog.layoutInflater, R.layout.dialog_default, null, false)
-
-        dialog.setCancelable(false)
-        dialog.setContentView(binding.root)
-        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-        dialog.window?.attributes?.windowAnimations = R.style.DialogAnimation
-        dialog.setCanceledOnTouchOutside(false)
-
-        when (item) {
-            is FriendlyMessage -> {
-                binding.errorModel = ErrorModel(
-                    resDrawable(R.drawable.ic_error_internet, null),
-                    item.title,
-                    item.message,
-                    item.buttonPositive ?: resString(R.string.error_network_buttontext)
-                )
-            }
-            is Throwable -> {
-                binding.errorModel = errorString(ExceptionHandle.handleException(item))
-            }
-
-            is ErrorMessage -> {
-                binding.errorModel = ErrorModel(
-                    resDrawable(R.drawable.ic_error_internet, null),
-                    item.title,
-                    item.message,
-                    resString(R.string.error_network_buttontext)
-                )
-            }
-            else -> {}
-        }
-
-        binding.btnClick.setSafeOnClickListener {
-            dialog.dismiss()
-            listenerOkey()
-        }
-        binding.ivClose.setSafeOnClickListener {
-            dialog.dismiss()
-            listenerCancel()
-        }
-
-        dialog.show()
-    }
-}
 
 
 fun Context.errorString(error: ExceptionHandle.Companion.ERROR?): ErrorModel {

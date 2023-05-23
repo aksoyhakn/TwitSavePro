@@ -37,12 +37,7 @@ class DownloadViewModel @Inject constructor(
                         toogleFragmentLoading(false)
                         downloadResponse.value = it.data.body()
                     }
-                    is State.Fail -> {
-                        toogleFragmentLoading(false)
-                        it.baseResponse.friendlyMessage.notNull {
-                            fragmentErrorOrFail(it)
-                        }
-                    }
+
                     is State.Error -> {
                         toogleFragmentLoading(false)
                         fragmentErrorOrFail(it.throwable)
@@ -67,10 +62,7 @@ class DownloadViewModel @Inject constructor(
                         downloadURL.value = it.data.body()
                         toogleFragmentLoading(false)
                     }
-                    is State.Fail -> {
-                        toogleFragmentLoading(false)
 
-                    }
                     is State.Error -> {
                         toogleFragmentLoading(false)
                     }

@@ -15,7 +15,7 @@ import javax.inject.Inject
 
 @ExperimentalCoroutinesApi
 @HiltAndroidApp
-class TikTakApp : Application() {
+class AppBase : Application() {
 
     @Inject
     lateinit var initializers: AppInitializers
@@ -30,6 +30,6 @@ class TikTakApp : Application() {
 
 
     companion object {
-        lateinit var instance: TikTakApp
+        lateinit var instance: AppBase
     }
 }
